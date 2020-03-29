@@ -23,7 +23,7 @@
 }
 
 stage {
-  font-size: 9.75pt;
+  font-size: 11pt;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -35,7 +35,7 @@ stage {
   padding: 0 16px;
   border-width: 0;
   border-radius: 12px;
-  font-size: 9.75pt;
+  font-size: 11pt;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.54);
   background-color: transparent;
@@ -88,7 +88,7 @@ StEntry {
   border-width: 0;
   selection-background-color: #4586D8;
   selected-color: rgba(255, 255, 255, 0.85);
-  font-size: 11.25pt;
+  font-size: 13pt;
   font-weight: 400;
   caret-color: rgba(0, 0, 0, 0.54);
   color: rgba(0, 0, 0, 0.54);
@@ -173,19 +173,19 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(0, 0, 0, 0.87);
 }
 
-#screenShieldNotifications StScrollBar StBin#trough, #overview StScrollBar StBin#trough {
+#overview StScrollBar StBin#trough, #screenShieldNotifications StScrollBar StBin#trough {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-#screenShieldNotifications StScrollBar StButton#vhandle, #overview StScrollBar StButton#vhandle, #screenShieldNotifications StScrollBar StButton#hhandle, #overview StScrollBar StButton#hhandle {
+#overview StScrollBar StButton#vhandle, #screenShieldNotifications StScrollBar StButton#vhandle, #overview StScrollBar StButton#hhandle, #screenShieldNotifications StScrollBar StButton#hhandle {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-#screenShieldNotifications StScrollBar StButton#vhandle:hover, #overview StScrollBar StButton#vhandle:hover, #screenShieldNotifications StScrollBar StButton#hhandle:hover, #overview StScrollBar StButton#hhandle:hover {
+#overview StScrollBar StButton#vhandle:hover, #screenShieldNotifications StScrollBar StButton#vhandle:hover, #overview StScrollBar StButton#hhandle:hover, #screenShieldNotifications StScrollBar StButton#hhandle:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-#screenShieldNotifications StScrollBar StButton#vhandle:active, #overview StScrollBar StButton#vhandle:active, #screenShieldNotifications StScrollBar StButton#hhandle:active, #overview StScrollBar StButton#hhandle:active {
+#overview StScrollBar StButton#vhandle:active, #screenShieldNotifications StScrollBar StButton#vhandle:active, #overview StScrollBar StButton#hhandle:active, #screenShieldNotifications StScrollBar StButton#hhandle:active {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -365,7 +365,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 0 16px;
   border: none;
   margin-bottom: 6px;
-  font-size: 9.75pt;
+  font-size: 11pt;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.62);
   background-color: rgba(0, 0, 0, 0.1);
@@ -1351,15 +1351,23 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel .panel-button .system-status-icon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.09091em;
   padding: 0 3px;
 }
 
-.unlock-screen #panel .panel-button, .login-screen #panel .panel-button, .lock-screen #panel .panel-button {
+.unlock-screen #panel .panel-button,
+.login-screen #panel .panel-button,
+.lock-screen #panel .panel-button {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
+.unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active,
+.login-screen #panel .panel-button:focus,
+.login-screen #panel .panel-button:hover,
+.login-screen #panel .panel-button:active,
+.lock-screen #panel .panel-button:focus,
+.lock-screen #panel .panel-button:hover,
+.lock-screen #panel .panel-button:active {
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -1452,6 +1460,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 Gjs_AggregateMenu.panel-button,
 Gjs_ArcMenu_ApplicationsButton.panel-button {
   background-color: rgba(222, 222, 222, 0.15);
+  font-size: 13.5pt;
 }
 
 #calendarArea {
@@ -1770,7 +1779,7 @@ Gjs_ArcMenu_ApplicationsButton.panel-button {
 
 .message-icon-bin > StIcon {
   color: rgba(0, 0, 0, 0.87);
-  icon-size: 1.2307692308em;
+  icon-size: 1.09091em;
   -st-icon-style: requested;
   margin: 4px 0px 4px 4px;
 }
@@ -1794,7 +1803,7 @@ Gjs_ArcMenu_ApplicationsButton.panel-button {
 }
 
 .message-secondary-bin > StIcon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.09091em;
 }
 
 .message-title {
@@ -1900,7 +1909,7 @@ Gjs_ArcMenu_ApplicationsButton.panel-button {
 }
 
 .popup-menu-icon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.09091em;
 }
 
 .window-close {
@@ -2134,7 +2143,7 @@ Gjs_ArcMenu_ApplicationsButton.panel-button {
 }
 
 .list-search-result-title {
-  font-size: 11.25pt;
+  font-size: 13pt;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.85);
   spacing: 12px;
@@ -2271,7 +2280,9 @@ Gjs_ArcMenu_ApplicationsButton.panel-button {
   transition-duration: 150ms;
 }
 
-.show-apps:hover .overview-icon, .show-apps:focus .overview-icon, .show-apps:selected .overview-icon,
+.show-apps:hover .overview-icon,
+.show-apps:focus .overview-icon,
+.show-apps:selected .overview-icon,
 .app-well-app:hover .overview-icon,
 .app-well-app:focus .overview-icon,
 .app-well-app:selected .overview-icon,
@@ -2287,7 +2298,8 @@ Gjs_ArcMenu_ApplicationsButton.panel-button {
   background-image: none;
 }
 
-.show-apps:active .overview-icon, .show-apps:checked .overview-icon,
+.show-apps:active .overview-icon,
+.show-apps:checked .overview-icon,
 .app-well-app:active .overview-icon,
 .app-well-app:checked .overview-icon,
 .app-well-app.app-folder:active .overview-icon,
@@ -2421,7 +2433,8 @@ StWidget.focused .app-well-app-running-dot {
   /* FIXME: this is to keep the label in sync with the entry */
 }
 
-.app-folder-dialog .folder-name-container .folder-name-label, .app-folder-dialog .folder-name-container .folder-name-entry {
+.app-folder-dialog .folder-name-container .folder-name-label,
+.app-folder-dialog .folder-name-container .folder-name-entry {
   font-size: 18pt;
   font-weight: bold;
 }
@@ -2453,7 +2466,9 @@ StWidget.focused .app-well-app-running-dot {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.app-folder-dialog StButton#vhandle, .app-folder-dialog StButton#vhandle:hover, .app-folder-dialog StButton#vhandle:active {
+.app-folder-dialog StButton#vhandle,
+.app-folder-dialog StButton#vhandle:hover,
+.app-folder-dialog StButton#vhandle:active {
   background-color: transparent;
 }
 
@@ -2537,7 +2552,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .notification-banner .secondary-icon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.09091em;
 }
 
 .notification-banner .notification-actions {
@@ -2588,7 +2603,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .secondary-icon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.09091em;
 }
 
 .chat-body {
@@ -2876,7 +2891,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .candidate-page-button-icon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.09091em;
 }
 
 /* Auth Dialogs & Screen Shield */
@@ -3030,7 +3045,8 @@ StWidget.focused .app-well-app-running-dot {
   padding-left: 2px;
 }
 
-.login-dialog-not-listed-button:focus .login-dialog-not-listed-label, .login-dialog-not-listed-button:hover .login-dialog-not-listed-label {
+.login-dialog-not-listed-button:focus .login-dialog-not-listed-label,
+.login-dialog-not-listed-button:hover .login-dialog-not-listed-label {
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -3324,7 +3340,7 @@ StWidget.focused .app-well-app-running-dot {
   padding: 0 16px;
   border: none;
   border-radius: 12px;
-  font-size: 9.75pt;
+  font-size: 11pt;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.54);
   background-color: transparent;
@@ -3408,41 +3424,52 @@ StWidget.focused .app-well-app-running-dot {
   background: transparent;
 }
 
-#dashtodockContainer #dash, #dashtodockContainer:overview #dash, #dashtodockContainer.extended #dash, #dashtodockContainer.extended:overview #dash {
+#dashtodockContainer #dash,
+#dashtodockContainer:overview #dash,
+#dashtodockContainer.extended #dash,
+#dashtodockContainer.extended:overview #dash {
   padding: 0;
   border: none;
   margin: 0;
 }
 
-#dashtodockContainer.top #dash, #dashtodockContainer.top:overview #dash {
+#dashtodockContainer.top #dash,
+#dashtodockContainer.top:overview #dash {
   border-radius: 16px 16px 16px 16px;
 }
 
-#dashtodockContainer.top.extended #dash, #dashtodockContainer.top.extended:overview #dash {
+#dashtodockContainer.top.extended #dash,
+#dashtodockContainer.top.extended:overview #dash {
   border-radius: 16px 16px 16px 16px;
 }
 
-#dashtodockContainer.bottom #dash, #dashtodockContainer.bottom:overview #dash {
+#dashtodockContainer.bottom #dash,
+#dashtodockContainer.bottom:overview #dash {
   border-radius: 16px 16px 16px 16px;
 }
 
-#dashtodockContainer.bottom.extended #dash, #dashtodockContainer.bottom.extended:overview #dash {
+#dashtodockContainer.bottom.extended #dash,
+#dashtodockContainer.bottom.extended:overview #dash {
   border-radius: 16px 16px 16px 16px;
 }
 
-#dashtodockContainer.left #dash, #dashtodockContainer.left:overview #dash {
+#dashtodockContainer.left #dash,
+#dashtodockContainer.left:overview #dash {
   border-radius: 16px 16px 16px 16px;
 }
 
-#dashtodockContainer.left.extended #dash, #dashtodockContainer.left.extended:overview #dash {
+#dashtodockContainer.left.extended #dash,
+#dashtodockContainer.left.extended:overview #dash {
   border-radius: 16px 16px 16px 16px;
 }
 
-#dashtodockContainer.right #dash, #dashtodockContainer.right:overview #dash {
+#dashtodockContainer.right #dash,
+#dashtodockContainer.right:overview #dash {
   border-radius: 16px 16px 16px 16px;
 }
 
-#dashtodockContainer.right.extended #dash, #dashtodockContainer.right.extended:overview #dash {
+#dashtodockContainer.right.extended #dash,
+#dashtodockContainer.right.extended:overview #dash {
   border-radius: 16px 16px 16px 16px;
 }
 
