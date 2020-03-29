@@ -6,7 +6,7 @@ if [[ ! "$(command -v sassc)" ]]; then
   exit 1
 fi
 
-SASSC_OPT=('-M' '-t' 'expanded')
+SASSC_OPT=('-p' '5' '-M' '-t' 'expanded')
 
 _COLOR_VARIANTS=('' '-dark' '-light')
 _BCOLOR_VARIANTS=('' '-dark')
