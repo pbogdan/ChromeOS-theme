@@ -4,12 +4,12 @@ $extra_background_clip: if($variant == 'light', padding-box, border-box);
 $panel-corner-radius: 0;
 
 // font families
-$font-family: "M+ 1c", Roboto, Cantarell, Sans-Serif;
-$large-font-family: Roboto, "M+ 1c", Cantarell, Sans-Serif;
+$font-family: Cantarell, Sans-Serif;
+$large-font-family: Cantarell, Sans-Serif;
 
 // font sizes
-$root-font-size: if($laptop == 'false', 14px, 13px);
-$subheading-size: if($laptop == 'false', 16px, 15px);
+$root-font-size: if($laptop == 'false', 12pt, 11pt);
+$subheading-size: if($laptop == 'false', 14pt, 13pt);
 
 // opacities
 $higher_opacity: 0.9;
